@@ -1,0 +1,26 @@
+#term_in=201903&sel_subj=dummy&sel_day=dummy&sel_schd=dummy&sel_insm=dummy&sel_camp=dummy&sel_levl=dummy&sel_sess=dummy&sel_instr=dummy&sel_ptrm=dummy&sel_attr=dummy&sel_subj=CS&sel_crse=&sel_title=&sel_schd=%25&sel_from_cred=&sel_to_cred=&sel_levl=%25&sel_dunt_unit=&sel_dunt_code=MTHS&sel_instr=%25&begin_hh=0&begin_mi=0&begin_ap=a&end_hh=0&end_mi=0&end_ap=a
+paramslist = {
+              "term_in": "201901", 
+              "sel_subj": "CS",
+              "sel_day": "",
+              "sel_schd": "", 
+              "sel_insm": "", 
+              "sel_camp": "dummy", 
+              "sel_levl": "", 
+              "sel_sess": "", 
+              "sel_instr": "",
+              "sel_ptrm": "",
+              "sel_attr": "", 
+              "sel_crse:": "", 
+              "sel_title": "", 
+              "sel_to_cred": "", 
+              "sel_from_cred": "",
+              "sel_dunt_unit": "", 
+              "sel_dunt_code": "", 
+              "end_mi": "", 
+              "end_hh": "", 
+              "end_ap": "", 
+              "begin_mi": "",
+              "begin_hh": "", 
+              "begin_ap": ""
+              }
