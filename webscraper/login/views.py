@@ -39,14 +39,16 @@ paramslist = {
 
 def getCourses(params):
 	mysession = requests.session()
-	url1 = 'https://selfserve-db.up.edu/prd/bwckschd.p_disp_dyn_sched'
-	#https://selfserve-db.up.edu/prd/bwckgens.p_proc_term_date
+	#https://selfserve-db.up.edu/prd/bwckschd.p_disp_dyn_sched <- first select-term page, no actual post requests.
+	
+	url1 = 'https://selfserve-db.up.edu/prd/bwckgens.p_proc_term_date'
+	
 	url2 = 'https://selfserve-db.up.edu/prd/bwckschd.p_get_crse_unsec'
 	header = {'Accept-Encoding': 'gzip, deflate, sdch',
 				'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
 				'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.'}
 	
-	#return mysession.post(url1, headers = header, params = {"p_calling_proc": "bwckschd.p_disp_dyn_sched", "p_term": "201903"})
+	return mysession.post(url1, headers = header, params = {"p_calling_proc": "bwckschd.p_disp_dyn_sched", "p_term": "201903"})
 	#time.sleep(5)
 	return mysession.post(url2, headers = header, params=paramslist)
 	
